@@ -10,12 +10,20 @@
     <!-- <h1>Duurzaamhuis</h1><br>
     <p>Becky van der Meulen, Danny van der Zwart, Tijmen Terpstra</p> -->
     <div id="dashboard">
-        <div class="item item1">Bababoey</div>
-        <div class="item item2">Weer</div>
-        <div class="item item3">Stroom</div>
+        <div class="item item1">
+            
+
+
+            <p1>Bababoey</p1></div>
+        <div class="item item2">
+            <a class="weatherwidget-io" href="https://forecast7.com/nl/52d374d90/amsterdam/" data-label_1="AMSTERDAM" data-label_2="WEATHER" data-mode="Current" data-theme="pure" >AMSTERDAM</a>
+        </div>
+        <div class="item item3">
+            <p1>lichten</p1>
+        </div>
         <div class="item item4">Licht</div>
-        <div class="item item5">Goeiemorgen</div>
-        <div class="item item6">?</div>
+        <div class="item item5">Goeiedag User2</div>
+        <div class="item item6"><button onclick="myFunction()">Toggle dark mode</button></div>
         <div class="item item7">
             <div class="tradingview-widget-container">
                 <div id="tradingview_f3e38"></div>
@@ -25,7 +33,7 @@
                 new TradingView.widget(
                 {
                 "width": 980,
-                "height": 350,
+                "height": 310,
                 "symbol": "BTCUSD",
                 "interval": "A",
                 "timezone": "Etc/UTC",
@@ -45,4 +53,14 @@
                 </div>
         </div>
 </body>
+<script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+
+<script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
 </html>
