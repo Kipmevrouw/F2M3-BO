@@ -16,8 +16,33 @@
         <div class="item item4">Licht</div>
         <div class="item item5">Goeiemorgen</div>
         <div class="item item6">?</div>
-        <div class="item item7">grafiek</div>
-
-    </div>
+        <div class="item item7">
+            <div class="tradingview-widget-container">
+                <div id="tradingview_f3e38"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                new TradingView.widget(
+                {
+                "width": 980,
+                "height": 350,
+                "symbol": "BTCUSD",
+                "interval": "A",
+                "timezone": "Etc/UTC",
+                "theme": "light",
+                "style": "3",
+                "locale": "nl",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_f3e38"
+              }
+                );
+                </script>
+              </div>
+              <!-- TradingView Widget END -->
+            
+                </div>
+        </div>
 </body>
 </html>

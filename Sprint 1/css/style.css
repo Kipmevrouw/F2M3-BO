@@ -5,8 +5,8 @@ body {
 #dashboard{
     display: grid;
     height: 100vh;
-    grid-column-gap: 10px; 
-    grid-row-gap: 10px;
+    grid-column-gap: 20px; 
+    grid-row-gap: 20px;
     grid-template-rows: 100px 200px 100px;
 }
 .item1{
