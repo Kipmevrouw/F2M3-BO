@@ -16,10 +16,17 @@
 
             <p1>Bababoey</p1></div>
         <div class="item item2">
-            <a class="weatherwidget-io" href="https://forecast7.com/nl/52d374d90/amsterdam/" data-label_1="AMSTERDAM" data-label_2="WEATHER" data-mode="Current" data-theme="pure" >AMSTERDAM</a>
+            <a class="weatherwidget-io" href="https://forecast7.com/nl/52d374d90/amsterdam/" data-label_1="AMSTERDAM" data-label_2="WEATHER" data-mode="Current" data-theme="pure" text-indent= "-1rem">AMSTERDAM</a>
         </div>
         <div class="item item3">
-            <p1>Licht</p1>
+            <p1>
+                <img src=../img/lamp.png alt="bababoey_logo" height="70" width="60"><img>
+                <br>
+                <img src=../img/lamp.png alt="bababoey_logo" height="70" width="60"><img>
+                <br>
+                <img src=../img/lamp.png alt="bababoey_logo" height="70" width="60"><img>
+                <br>
+            </p1>
         </div>
         <div class="item item4">Controlepanel</div>
         <div class="item item5">Goeiedag User2</div>
@@ -61,6 +68,22 @@
     function myFunction() {
        var element = document.body;
        element.classList.toggle("dark-mode");
+        new TradingView.widget(
+           {    "width": 980,
+                "height": 310,
+                "symbol": "BTCUSD",
+                "interval": "A",
+                "timezone": "Etc/UTC",
+                "theme": "dark",
+                "style": "3",
+                "locale": "nl",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_f3e38"
+           }
+       );
+       
     }
     </script>
 </html>
