@@ -9,57 +9,105 @@ body {
         
   }
 
-#licht{
+/* #licht{
     text-align: left;
-}
-
-  
+} */
 #dashboard{
-    display: grid;
-    height: 100vh;
-    grid-column-gap: 10px; 
-    grid-row-gap: 10px;
-    grid-template-rows: 100px 200px 100px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr; 
+    grid-template-areas: "item1"
+                         "item2"
+                         "item3"
+                         "item4"
+                         "item5"
+                         "item6"
+                         "item7";
 }
 
 .item1{
-    grid-column-start: 1;
-    grid-column-end: 6;
-    color: #0044b4;
-    font-weight: bold;
-    font-size: 15px;
+    grid-area: item1;
+    display: none;
+    background-color: rgb(92, 219, 149);
 }
 .item2{
-    grid-row-start: 2;
-    grid-row-end: 6;
- 
+    grid-area: item2;
+    background-color: rgb(226, 225, 225);
 }
 .item3{
-    grid-column-start: 2;
-    grid-column-end: 3;    
+    grid-area: item3;
+    display: none;
+    background-color: rgb(226, 225, 225);
 }
 .item4{
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
 }
 .item6{
-    
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-area: item6;
 }
 .item7{
-     grid-column-start: 4;
-    grid-column-end: 3; 
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-area: item7;
 }
 .item {
-    border: 6px solid rgb(107, 107, 107);
     font-size: 50px;
     
 }
 #dashboard > div{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    place-items: center;
+    place-items: center; */
+}
+.apparaat {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: 30px center;
+}
+@media screen and (min-width: 600px) {
+    #dashboard{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100px 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr;
+        grid-template-areas: "item1 item2 item2"
+                             "item3 item4 item5"
+                             "item3 item6 item7";
+
+    }
+    .item1{
+        display: block;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+    }
+    .item2{
+        display: flex;
+        justify-content: center;
+        place-items: center;
+    }
+    .item3{
+        display: block;
+    }
+    .item4{
+        margin: 30px;
+        background-color: rgb(241, 241, 241);
+    }
+    .item5{
+        margin: 30px;
+        background-color: rgb(241, 241, 241);
+    }
+    .item6{
+        margin: 30px;
+        background-color: rgb(241, 241, 241);
+    }
+    .item7{
+        margin: 30px;
+        background-color: rgb(241, 241, 241);
+    }
 }
