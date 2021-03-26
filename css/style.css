@@ -17,46 +17,41 @@ body {
 #dashboard{
     display: grid;
     height: 100vh;
-    grid-column-gap: 20px; 
-    grid-row-gap: 20px;
+    grid-column-gap: 10px; 
+    grid-row-gap: 10px;
     grid-template-rows: 100px 200px 100px;
 }
+
 .item1{
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     color: #0044b4;
     font-weight: bold;
     font-size: 15px;
 }
 .item2{
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 6;
+ 
 }
 .item3{
-    grid-row-start: 2;
-    grid-row-end: 4;
-    text-indent: 1rem;
+    grid-column-start: 2;
+    grid-column-end: 3;    
 }
 .item4{
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-.item5{
-    background-color:  #0044b4;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    font-weight: bold;
-    font-size: 15px;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 .item6{
-    grid-row-start: 5;
-    grid-row-end: 6;
+    
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 .item7{
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 2;
-    grid-column-end: 4;
+     grid-column-start: 4;
+    grid-column-end: 3; 
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 .item {
     border: 6px solid rgb(107, 107, 107);
