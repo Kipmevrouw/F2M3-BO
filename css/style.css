@@ -3,11 +3,7 @@ body {
     font-family: sans-serif;
     background-color: white;
 }
-.dark-mode {
-    background-color: rgb(18, 21, 33);
-    color: white;
-        
-  }
+
 
 /* #licht{
     text-align: left;
@@ -55,6 +51,7 @@ body {
     
 }
 #dashboard > div{
+    color: black;
     /* display: flex;
     justify-content: center;
     place-items: center; */
@@ -114,6 +111,14 @@ body {
     html {
         height: 100%;
         background: radial-gradient(at top,#f2f2f2,#9A9A9A 90%) no-repeat;
+      }
+      .dark-mode {
+        background-color: rgb(25, 24, 70);
+        color: white;
+      }
+      .item4-dark {
+        background-color: rgb(25, 24, 70);
+        color: white;
       }
 
       .item62{
@@ -182,4 +187,3 @@ body {
         left: 40px;
         border-radius: 50%;
       }
-}
