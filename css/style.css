@@ -3,7 +3,9 @@ body {
     font-family: sans-serif;
     background-color: white;
 }
-
+.hidden{
+    display: none;
+}
 
 /* #licht{
     text-align: left;
@@ -100,7 +102,6 @@ body {
         background-color: rgb(241, 241, 241);
     }
     .item6{
-        
         margin: 30px;
         background-color: rgb(241, 241, 241);
     }
@@ -187,10 +188,4 @@ body {
         left: 40px;
         border-radius: 50%;
       }
-
-#grafiek {
-    background-color: #ffffff;
-    border: 2px dotted #333333;
-    width: 800px;
-    height: 600px;
-}
+    }
