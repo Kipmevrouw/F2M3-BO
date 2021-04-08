@@ -66,6 +66,9 @@ body {
     background-repeat: no-repeat;
     background-position: 30px center;
 }
+#item7b{
+    display: none;
+}
 @media screen and (min-width: 600px) {
     #dashboard{
         display: grid;
@@ -187,3 +190,4 @@ body {
         left: 40px;
         border-radius: 50%;
       }
+    }
