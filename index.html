@@ -7,6 +7,9 @@
     <script src="js/apparaten.js"></script>
     <script src="js/page.js"></script>
     <title>Duurzaamhuis</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="js/grafiek.js"></script>
 </head>
 <body>
     <div id="dashboard">
@@ -15,7 +18,8 @@
         </div>
         <div class="item item2"> <img src="img/bababoei_2.png" style="height: 200px;" alt=""> </div>
         <div class="item item3"></div>
-        <div class="item item4"><div class="apparaat apparaat2" data-id="WSS">
+        <div class="item item4">
+            <div class="apparaat apparaat2" data-id="WSS">
             <h1 style="font-size: 20px;">Titel apparaat</h1>
             <div>
                 <p style="font-size: 20px;">minuten per dag: <span>0</span></p>
@@ -67,7 +71,11 @@
             <button id="item7aknop">Toon 7a</button>
             <button id="item7bknop">Toon 7b</button>
             <div id="item7a" class="hidden">a</div>
-            <div id="item7b">b</div>
+            <div id="item7b">
+                <div id="grafiek">
+
+                </div>
+            </div>
         </div>
     </div>
 
