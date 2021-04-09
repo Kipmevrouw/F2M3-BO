@@ -2,5 +2,8 @@
     "naam": "Wasmachine",
     "vermogen": 48,
     "image": "img/Wasmachine.jpg",
-    "code": "WSS"
+    "code": "WSS",
+    "labels": ["Januari", "Februari", "Maart", "April"],
+    "series": [[230, 200, 190, 196]]
 }]
+

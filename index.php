@@ -1,5 +1,13 @@
+
+
 <html lang="en">
 <head>
+    <?php
+    session_start();
+    if(!isset($_SESSION['username']))
+    {echo "Je bent niet ingelogd"; exit();}
+
+?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +17,6 @@
     <title>Duurzaamhuis</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-    <script src="js/grafiek.js"></script>
 </head>
 <body>
     <div id="dashboard">
@@ -72,9 +79,7 @@
             <button id="item7bknop">Toon 7b</button>
             <div id="item7a" class="hidden">a</div>
             <div id="item7b">
-                <div id="grafiek">
-
-                </div>
+                <!--<iframe src="http://30957.hosts1.ma-cloud.nl/F1M3/grafiek2/index.html" width="820px" height="620px" style="border:none;">-->
             </div>
         </div>
     </div>

@@ -138,5 +138,10 @@ const berekenJaarKosten = (minuten_per_dag, vermogen) => {
     return price.toFixed(2);
 };
 
+const maakGrafiek = () => {
+  new Chartist.Line('#grafiek', apparaten);
+
+}
+
 //Hier begint alles.
 window.addEventListener("DOMContentLoaded", startCalculator);
