@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <?php
-    session_start();
-    if(!isset($_SESSION['username']))
-    {echo "Je bent niet ingelogd"; exit();}
+    //session_start();
+    //if(!isset($_SESSION['username']))
+    //{echo "Je bent niet ingelogd"; exit();}
 
 ?>
     <meta charset="UTF-8">
@@ -79,7 +79,7 @@
             <button id="item7bknop">Toon 7b</button>
             <div id="item7a" class="hidden">a</div>
             <div id="item7b">
-                <!--<iframe src="http://30957.hosts1.ma-cloud.nl/F1M3/grafiek2/index.html" width="820px" height="620px" style="border:none;">-->
+                <iframe src="http://30957.hosts1.ma-cloud.nl/F1M3/grafiek2/index.html" width="820px" height="620px" style="border:none;">
             </div>
         </div>
     </div>
