@@ -1,9 +1,9 @@
 <html lang="en">
 <head>
     <?php
-    //session_start();
-    //if(!isset($_SESSION['username']))
-    //{echo "Je bent niet ingelogd"; exit();}
+    session_start();
+    if(!isset($_SESSION['username']))
+    {echo "Je bent niet ingelogd"; exit();}
 
 ?>
     <meta charset="UTF-8">
