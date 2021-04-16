@@ -90,22 +90,37 @@
                     </div>
         </div>
         </div>
+
         <div class="item item7">
-            <button id="item7aknop">Toon 7a</button>
+<div class="buttons">
+        <a href="http://30957.hosts1.ma-cloud.nl/F1M3/BO/index.php" class = "button">toon 7a</a>
+        <a href="http://30957.hosts1.ma-cloud.nl/F1M3/BO/index.php?name=b" class = "button">toon 7b</a>
+        </div>
+
+        <?php
+
+        if(isset($_GET['name'])){
+            echo"<div id='item7b'>
+            <iframe src='http://30957.hosts1.ma-cloud.nl/F1M3/grafiek2/index.html' width='820px' height='400px' style='border:none;'></div>";
+                
+        }
+        else{
+            echo"<div id='item7a'>
+            <iframe src='http://30957.hosts1.ma-cloud.nl/F1M3/grafiek4/index.html' width='820px' height='400px' style='border:none;'></div>";
+        }
+
+        ?>
+        </div>
+        
+            <!--<button id="item7aknop">Toon 7a</button>
             <button id="item7bknop">Toon 7b</button>
-<<<<<<< HEAD
-            <div id="item7a" class="hidden">a</div>
+            <div id="item7a">
+            <iframe src="http://30957.hosts1.ma-cloud.nl/F1M3/grafiek4/index.html" width="820px" height="400px" style="border:none;"></div>
             <div id="item7b">
-                <iframe src="http://30957.hosts1.ma-cloud.nl/F1M3/grafiek2/index.html" width="820px" height="620px" style="border:none;">
-=======
-            <div id="item7a" class="hidden">
-<iframe src="http://30957.hosts1.ma-cloud.nl/F1M3/grafiek4/index.html" width="820px" height="620px" style="border:none;">
-            </div>
-            <div id="item7b">b
->>>>>>> b192246e80749b0810dfc5cef11f2a2a96ab3396
+                <iframe src="http://30957.hosts1.ma-cloud.nl/F1M3/grafiek2/index.html" width="820px" height="400px" style="border:none;">
             </div>
         </div>
-    </div>
+    </div>-->
 
 </body>
 <script>
